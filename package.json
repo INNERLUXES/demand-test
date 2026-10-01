@@ -1,0 +1,47 @@
+{
+  "name": "demand-test",
+  "version": "1.0.0",
+  "description": "Read the results of a landing page or fake door test and say, for each variant, whether it passes the success line written before launch, fails it, or is still undecided, with Wilson ranges, variant comparisons and the visitors still needed. No dependencies.",
+  "type": "module",
+  "main": "src/index.js",
+  "exports": {
+    ".": "./src/index.js"
+  },
+  "bin": {
+    "demand-test": "bin/demand-test.js"
+  },
+  "files": [
+    "bin",
+    "src",
+    "docs",
+    "examples",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "test": "node --test \"test/*.test.js\"",
+    "test:coverage": "node --test --experimental-test-coverage \"test/*.test.js\"",
+    "check": "node tools/check.mjs",
+    "example": "node bin/demand-test.js --results examples/results.csv --line 5%"
+  },
+  "keywords": [
+    "landing-page",
+    "mvp",
+    "idea-validation",
+    "conversion-rate",
+    "statistics",
+    "wilson-interval",
+    "startup",
+    "cli"
+  ],
+  "author": "INNERLUXES <info@innerluxes.dev>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/INNERLUXES/demand-test.git"
+  },
+  "homepage": "https://innerluxes.dev/software-development/landing-page-mvp"
+}

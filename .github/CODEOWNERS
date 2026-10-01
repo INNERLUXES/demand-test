@@ -1,0 +1,6 @@
+# Every change is reviewed by a maintainer.
+* @innerluxesdev
+
+# The statistics and the input checks decide every verdict the tool prints; changes need extra care.
+/src/stats.js @innerluxesdev
+/src/input.js @innerluxesdev
